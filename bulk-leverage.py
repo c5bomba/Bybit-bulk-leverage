@@ -2,13 +2,9 @@ from pybit.unified_trading import HTTP
 import time
 from pybit.exceptions import InvalidRequestError
 
-
 # API Infos
 bybit_api_key = "Bybit API"
 bybit_api_secret = "Bybit API Secret"
-
-# Desired leverage   
-lev=10 
 
 # Create API session
 session = HTTP(
@@ -26,12 +22,12 @@ for symbol in symbollist:
         response = session.set_leverage(
             category="linear", #inverse
             symbol=symbol,
-            buyLeverage=lev,
-            sellLeverage=lev,
+            buyLeverage="10",
+            sellLeverage="10",
         )
         print(f"{symbol} leverage set: {response}")
     except InvalidRequestError as e:
-        print(f"Error encountered: {symbol}")
+        print(f"Error encountered:"+symbol)
         continue  # Move to next symbol
 
-    time.sleep(1)  # Add a short delay to not send requests too quickly to the API
+    time.sleep(0.3)  # Add a short delay to not send requests too quickly to the API
