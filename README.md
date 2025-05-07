@@ -1,4 +1,4 @@
-# Bybit Bulk Leverage
+# Bybit Bulk Leverage Tool
 
 This Python script utilizes the PyBit library to efficiently manage and set leverage for multiple trading pairs on the Bybit exchange (specifically for the "linear" category).
 
