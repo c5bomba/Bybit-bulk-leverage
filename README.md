@@ -39,7 +39,7 @@ It offers an interactive command-line interface to fetch the latest trading symb
 ## Configuration
 
 1.  **API Credentials:**
-    *   Open `pair.py`.
+    *   Open `bulk-leverage.py`.
     *   Locate the `API_KEY` and `API_SECRET` constants near the top of the file.
     *   Replace the placeholder values with your actual Bybit API key and secret.
         ```python
@@ -54,10 +54,10 @@ It offers an interactive command-line interface to fetch the latest trading symb
 
 ## Usage
 
-1.  Navigate to the directory containing `pair.py` in your terminal.
+1.  Navigate to the directory containing `bulk-leverage.py` in your terminal.
 2.  Run the script:
     ```bash
-    python pair.py
+    python bulk-leverage.py
     ```
 3.  The script will initialize the API session and then present you with the main menu:
     ```
